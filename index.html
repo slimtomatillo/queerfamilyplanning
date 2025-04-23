@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Comprehensive family planning resources and information for LGBTQIA+ individuals and families">
+    <title>Pride and Joy - Queer Family Planning</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <div class="brand-container">
+                        <span class="brand-title" id="brandTitle">Pride and Joy</span>
+                        <span class="brand-subtitle" id="brandSubtitle">Queer Family Planning</span>
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="paths-to-parenthood.html">Paths to Parenthood</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="local-resources.html">Local Resources</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="legal-resources.html">Legal Resources</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="insurance.html">Insurance Guide</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="faqs.html">FAQs</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero text-center text-white py-5">
+            <div class="container">
+                <div class="hero-content text-center">
+                    <h1 class="display-4 mb-4">Inclusive Family Planning Resources</h1>
+                    <p class="lead mb-4">Comprehensive support and information for LGBTQIA+ individuals and families planning their path to parenthood.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="zip-search bg-light py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Find Local Resources</h2>
+                <p class="text-center mb-4">Enter your zip code to discover family planning resources, healthcare providers, and legal information specific to your area.</p>
+                <form id="zipSearchForm" class="zip-search-form mx-auto" style="max-width: 500px;">
+                    <div class="input-group">
+                        <input type="text" 
+                               class="form-control"
+                               id="zipCode" 
+                               name="zipCode" 
+                               pattern="[0-9]{5}" 
+                               maxlength="5" 
+                               placeholder="Enter ZIP code"
+                               required>
+                        <button class="btn btn-primary" type="submit">Search</button>
+                    </div>
+                </form>
+                <div id="searchResults" class="mt-4"></div>
+            </div>
+        </section>
+
+        <section class="planning-options py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Paths to Parenthood</h2>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3 class="card-title h5">Adoption</h3>
+                                <p class="card-text">Learn about domestic and international adoption processes for LGBTQIA+ families.</p>
+                                <a href="paths-to-parenthood/adoption.html" class="btn btn-outline-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3 class="card-title h5">Surrogacy</h3>
+                                <p class="card-text">Explore gestational surrogacy options and considerations for queer families.</p>
+                                <a href="paths-to-parenthood/surrogacy.html" class="btn btn-outline-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3 class="card-title h5">Assisted Reproduction</h3>
+                                <p class="card-text">Information about IVF, IUI, and other fertility treatments.</p>
+                                <a href="paths-to-parenthood/assisted-reproduction.html" class="btn btn-outline-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3 class="card-title h5">Fostering</h3>
+                                <p class="card-text">Guide to foster care and foster-to-adopt programs.</p>
+                                <a href="/planning-options/fostering" class="btn btn-outline-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/includeFooter.js"></script>
+    <script src="js/zipSearch.js"></script>
+</body>
+</html> 
