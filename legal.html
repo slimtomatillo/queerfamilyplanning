@@ -16,21 +16,85 @@
             <div class="container">
                 <h1 class="mb-4">Legal Resources</h1>
                 <div class="row g-4">
+                    <!-- Federal Rights Column -->
                     <div class="col-lg-8">
+                        <!-- Federal Protections -->
                         <div class="card mb-4">
                             <div class="card-body">
-                                <h2 class="h4">Know Your Rights</h2>
-                                <p>Understanding your legal rights and protections as an LGBTQIA+ parent or prospective parent.</p>
-                                <!-- Add content -->
+                                <h2 class="h4">Federal Protections</h2>
+                                <p>Key federal protections for LGBTQIA+ families include:</p>
+                                <ul>
+                                    <li><strong>Marriage Equality:</strong> Nationwide recognition of same-sex marriage (Obergefell v. Hodges, 2015)</li>
+                                    <li><strong>Employment Protection:</strong> Discrimination based on sexual orientation or gender identity is prohibited (Bostock v. Clayton County, 2020)</li>
+                                    <li><strong>Healthcare Rights:</strong> Section 1557 of the ACA prohibits discrimination in healthcare settings</li>
+                                    <li><strong>Housing Protection:</strong> Fair Housing Act protections against discrimination</li>
+                                </ul>
+                                <p class="small text-muted">Source: <a href="https://www.hrc.org/resources/federal-legislation" target="_blank" rel="noopener">Human Rights Campaign Federal Policy</a></p>
                             </div>
                         </div>
-                        <!-- More sections -->
+
+                        <!-- Family Formation Rights -->
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h2 class="h4">Family Formation Rights</h2>
+                                <p>Understanding your rights in family planning:</p>
+                                <ul>
+                                    <li><strong>Adoption Rights:</strong> Same-sex couples have the right to adopt in all 50 states</li>
+                                    <li><strong>Second-Parent Adoption:</strong> Available in many states to protect non-biological parents</li>
+                                    <li><strong>Birth Certificates:</strong> Both parents can be listed on birth certificates</li>
+                                    <li><strong>Assisted Reproduction:</strong> Legal protections for intended parents vary by state</li>
+                                </ul>
+                                <p class="small text-muted">Source: <a href="https://www.lambdalegal.org/know-your-rights/article/marriage-and-relationships" target="_blank" rel="noopener">Lambda Legal Family Rights Guide</a></p>
+                            </div>
+                        </div>
+
+                        <!-- Anti-Discrimination Laws -->
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h2 class="h4">Anti-Discrimination Protections</h2>
+                                <p>Protection against discrimination in family planning:</p>
+                                <ul>
+                                    <li><strong>Healthcare Services:</strong> Protection against discrimination in fertility treatment</li>
+                                    <li><strong>Adoption Services:</strong> Varying state protections against discrimination by agencies</li>
+                                    <li><strong>Foster Care:</strong> Federal guidance protecting LGBTQIA+ foster parents</li>
+                                    <li><strong>Insurance Coverage:</strong> State-specific protections for fertility treatment</li>
+                                </ul>
+                                <p class="small text-muted">Source: <a href="https://www.glad.org/know-your-rights/" target="_blank" rel="noopener">GLAD Legal Advocates Rights Center</a></p>
+                            </div>
+                        </div>
                     </div>
+
+                    <!-- Resources Sidebar -->
                     <div class="col-lg-4">
-                        <div class="card">
+                        <div class="card mb-4">
                             <div class="card-body">
                                 <h3 class="h5">Find Legal Help</h3>
-                                <!-- Add search or directory -->
+                                <p>Connect with LGBTQIA+-affirming legal resources:</p>
+                                <ul class="list-unstyled">
+                                    <li class="mb-3">
+                                        <a href="https://www.lambdalegal.org/help" target="_blank" rel="noopener" class="btn btn-outline-primary w-100">Lambda Legal Help Desk</a>
+                                    </li>
+                                    <li class="mb-3">
+                                        <a href="https://www.glad.org/legal-help/" target="_blank" rel="noopener" class="btn btn-outline-primary w-100">GLAD Legal Resources</a>
+                                    </li>
+                                    <li class="mb-3">
+                                        <a href="https://www.nclrights.org/legal-help/" target="_blank" rel="noopener" class="btn btn-outline-primary w-100">NCLR Legal Help</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h3 class="h5">State-Specific Information</h3>
+                                <p>Laws and protections vary by state. Enter your location to find specific information:</p>
+                                <form class="mb-3">
+                                    <select class="form-select mb-2" id="stateSelect">
+                                        <option selected>Select your state</option>
+                                        <!-- Add state options dynamically with JavaScript -->
+                                    </select>
+                                    <button type="submit" class="btn btn-primary w-100">Find State Laws</button>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -39,9 +103,10 @@
         </section>
     </main>
 
-    <!-- Bootstrap Bundle with Popper -->
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/includeNav.js"></script>
     <script src="js/includeFooter.js"></script>
+    <script src="js/stateLaws.js"></script>
 </body>
 </html> 
