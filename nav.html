@@ -6,10 +6,40 @@
                 <span class="brand-subtitle">Queer Family Planning</span>
             </div>
         </a>
+        
+        <!-- Desktop Search -->
+        <form class="d-none d-lg-flex nav-search mx-4" onsubmit="return false;">
+            <div class="input-group">
+                <input type="search" 
+                       id="globalSearch" 
+                       class="form-control" 
+                       placeholder="Search..."
+                       aria-label="Search">
+                <button class="btn" type="button" id="searchButton">
+                    Search
+                </button>
+            </div>
+        </form>
+
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+        
         <div class="collapse navbar-collapse" id="navbarNav">
+            <!-- Mobile Search -->
+            <form class="d-lg-none nav-search mx-4 mb-2" onsubmit="return false;">
+                <div class="input-group">
+                    <input type="search" 
+                           id="globalSearchMobile" 
+                           class="form-control" 
+                           placeholder="Search..."
+                           aria-label="Search">
+                    <button class="btn" type="button" id="searchButtonMobile">
+                        Search
+                    </button>
+                </div>
+            </form>
+            
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="paths.html" data-page="paths">Paths</a>
